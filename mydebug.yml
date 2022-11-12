@@ -6,6 +6,10 @@
     command: hostname -f
     register: myfristtaskresult
 
+  - name: i want to execute linux command
+    command: pwd
+    register: presentworkingdirectory
+
   - name: i want to disply fristtaskresult
     debug: 
       msg: "{{myfristtaskresult}}"
