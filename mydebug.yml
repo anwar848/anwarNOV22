@@ -42,3 +42,11 @@
     debug: 
 
      msg: "{{java}}"
+
+  - name: i want to execute linux command
+    command: ls
+    register: anwarr
+
+  - name: i want to display anwarr
+    debug: 
+      msg: "{{anwarr}}"
