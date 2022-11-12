@@ -19,4 +19,4 @@
 
 [webservers:vars]
 mywebserverpackonubuntu= apache2
-mywebserverpackonredhat= httpdd
+mywebserverpackonredhat= httpd
