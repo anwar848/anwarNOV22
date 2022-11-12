@@ -12,7 +12,7 @@
       name: tree
       state: presentt
   
-  - name: ibnstall tree
+  - name: install tree
     apt:
       name: tree
       state: present
