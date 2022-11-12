@@ -9,7 +9,7 @@
     tags: mygit
 
   - name: install wget
-    apt: 
+    yum: 
      name: wget
      state: present
     tags: mywget
