@@ -1,5 +1,5 @@
 --- 
-- hosts: webservers
+- hosts: 172.31.6.191
   become: yes
   tasks:
   - name: install git 
