@@ -13,7 +13,12 @@
   - name: i want to display presentworkingdirectory 
     debug: 
       msg: "{{presentworkingdirectory}}"
-      
+
   - name: i want to disply fristtaskresult
     debug: 
       msg: "{{myfristtaskresult}}"
+
+  - name: i want to execute linux command
+    command: date
+    register: todaydate
+    
