@@ -62,4 +62,4 @@
     apt:
       name: tree
       state: present
-    when: myfristtaskresult.stderr=! ""
+    when: myfristtaskresult.stderr== ""
