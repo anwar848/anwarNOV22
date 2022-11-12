@@ -25,3 +25,11 @@
   - name: i want to display todaydate
     debug:
       msg: "{{todaydate}}"
+
+  - name: i want to execute linux command
+    command: whoami
+    register: ansar
+
+  - name: i want disply ansar
+    debug: 
+      msg: "{{ansar}}"
