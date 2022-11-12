@@ -1,21 +1,21 @@
 --- 
-- hosts: 172.31.7.197
+- hosts: 172.31.6.191
   become: yes
   tasks:
   - name: install git 
     apt: 
       name: git
       state: present
-    tags: mygit
+      tags: mygit
 
   - name: install wget
-    yum: 
+    apt: 
      name: wget
      state: present
-    tags: mywget
+     tags: mywget
 
   - name: install tree
     apt:
       name: tree
       state: present
-    tags: mytree
+      tags: mytree
