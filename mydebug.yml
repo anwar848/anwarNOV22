@@ -33,3 +33,12 @@
   - name: i want disply ansar
     debug: 
       msg: "{{ansar}}"
+
+  - name: i want to execute linux command
+    command: java -version
+    register: java
+
+  - name: i want to disply java 
+    debug: 
+
+     msg: "{{java}}"
