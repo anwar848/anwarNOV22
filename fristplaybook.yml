@@ -14,7 +14,6 @@
       state: started
     when: ansible_os_family== "Debian"
 
-
   - name: install webserver on redhat ansible nodes
     yum:
       name: "{{mywebserverpackonredhat}}"
