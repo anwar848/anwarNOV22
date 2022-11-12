@@ -2,18 +2,17 @@
 - hosts: webservers
   become: yes
   tasks:
-   - name: install git
-     apt: 
+  - name: install git
+    apt: 
       name: git 
       state: present
 
-   - name: install tree
-     apt: 
+  - name: install tree
+    apt: 
       name: tree
       state: presentt
   
-   - name: ibnstall tree
-     apt: 
-
+  - name: ibnstall tree
+    apt:
       name: tree
       state: present
