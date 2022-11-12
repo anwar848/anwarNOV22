@@ -21,4 +21,7 @@
   - name: i want to execute linux command
     command: date
     register: todaydate
-    
+
+  - name: i want to display todaydate
+    debug:
+      msg: "{{todaydate}}"
