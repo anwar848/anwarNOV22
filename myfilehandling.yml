@@ -17,9 +17,16 @@
     template: 
       src: myindex.j2
       dest: /var/www/html/index.html
+    notify: startwebserver
 
   - name: i want douwnload internet files into ansible nodes
     get_url: 
       url: https://get.jenkins.io/war-stable/2.361.3/jenkins.war
       dest: /home/jenkins.war
       force_basic_auth: yes
+
+  handlers:
+  - name: startwebserver
+    apt:  
+      name: apache2
+      state: present
