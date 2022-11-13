@@ -15,5 +15,5 @@
   
   - name: copy dynamic files into ansible nodes
     template: 
-      src: myindex.j
+      src: myindex.j2
       dest: /var/www/html/index.html
